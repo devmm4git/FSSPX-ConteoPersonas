@@ -1,0 +1,25 @@
+1.- Agregar el Distrito (Pais) - wms_distritos.
+INSERT INTO `fsspx_dev`.`wms_distritos` (`distrito_pais`, `status`) VALUES ('Colombia', '1');
+
+2.- Agregar el Prioriato (Ciudad Mexico, Puebla, Leon) - wms_prioriatos
+
+
+2.- Agregar el usuario SANDBOX
+curl -X POST "https://fsp.mm4.me/accounts/php/run/newaccount.php" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "PBWRQ: https://fsp.mm4.me/" \
+  --data-urlencode "name=Pater Pier" \
+  --data-urlencode "email=superior@fsspx.com" \
+  --data-urlencode "password=password" \
+  --data-urlencode "business=5"
+
+2.- Agregar el usuario PRODUCCION
+curl -X POST "https://fsspxglobal.site/accounts/php/run/newaccount.php" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "PBWRQ: https://fsspxglobal.site/" \
+  --data-urlencode "name=Pater Pier" \
+  --data-urlencode "email=superior@fsspx.com" \
+  --data-urlencode "password=password" \
+  --data-urlencode "business=5"
+
+  business=PK_BUSINESS_ID_AGREGADO_ANTERIORMENTE o bien el FK del Distrito a ligar el usuario

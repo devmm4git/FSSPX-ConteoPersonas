@@ -1,0 +1,9 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#000000",       // Fondo de la barra de título
+        "titleBar.activeForeground": "#ffffff",       // Texto e iconos de la barra de título
+        "activityBar.background": "#868686",          // Fondo de la barra de actividad
+        "activityBar.foreground": "#ffffff",          // Icono activo (blanco)
+        "activityBar.inactiveForeground": "#ffffff"   // Iconos inactivos (blanco)
+    }
+}
